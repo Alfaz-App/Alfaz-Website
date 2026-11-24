@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfaz — Kinetic Poetry, Master Recitations & Story Studio</title>
+  <meta name="description" content="Experience classical Urdu, Hindi, and Stoic world literature through kinetic vertical reels, dual master recitations, acoustic ambient soundscapes, and live daily poetry battles.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Modern Animated Mesh & Interactive Stardust Background -->
+  <div class="ambient-mesh-canvas">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+  </div>
+  <canvas id="ambientCanvas" class="ambient-particles-canvas"></canvas>
+  <div class="subtle-grid-pattern"></div>
+  <div class="cursor-glow-spot" id="cursorGlow"></div>
+  <div class="texture-grain-overlay"></div>
+
+  <div class="content-wrapper">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="./" class="brand">
+          <img src="assets/icon.png" alt="Alfaz Quill" class="brand-icon">
+          ALFAZ
+        </a>
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#arena" class="nav-link">The Arena</a></li>
+          <li><a href="#download" class="nav-link">Download</a></li>
+          <li><a href="privacy/" class="nav-link">Privacy</a></li>
+          <li><a href="terms/" class="nav-link">Terms</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="nav-cta" target="_blank" rel="noopener">
+            <span>Download App</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#features" class="mobile-drawer-link">Features</a>
+      <a href="#arena" class="mobile-drawer-link">The Arena</a>
+      <a href="#download" class="mobile-drawer-link">Download</a>
+      <a href="privacy/" class="mobile-drawer-link">Privacy Policy</a>
+      <a href="terms/" class="mobile-drawer-link">Terms & Conditions</a>
+      <a href="guidelines/" class="mobile-drawer-link">Community Guidelines</a>
+      <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="btn-primary" target="_blank" rel="noopener" style="margin-top: 8px; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.613V3.427c0-.624.23-1.204.609-1.613zm11.603 11.603l2.585 2.586-12.032 6.946 9.447-9.532zm2.585-2.834l-2.585 2.585-9.447-9.532 12.032 6.947zm1.19 1.189l3.528 2.037a1.69 1.69 0 010 2.934l-3.528 2.037-2.88-2.504 2.88-2.504z"/></svg>
+        <span>Download on Google Play</span>
+      </a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="pill-sparkle">✦</span>
+          <span class="pill-title">OFFICIAL PRODUCTION RELEASE</span>
+          <span class="pill-sep">·</span>
+          <span class="pill-sub">Google Play</span>
+        </div>
+        <h1 class="hero-title">
+          Where Timeless Poetry Meets <span>Living Kinetic Art</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Immerse yourself in classical Urdu shayari, Hindi kavita, and Stoic world literature. Flowing ambient soundscapes, authentic master voice recitations, and 4K story exports.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.613V3.427c0-.624.23-1.204.609-1.613zm11.603 11.603l2.585 2.586-12.032 6.946 9.447-9.532zm2.585-2.834l-2.585 2.585-9.447-9.532 12.032 6.947zm1.19 1.189l3.528 2.037a1.69 1.69 0 010 2.934l-3.528 2.037-2.88-2.504 2.88-2.504z"/></svg>
+            <span>Download on Google Play</span>
+          </a>
+          <a href="#features" class="btn-secondary">
+            <span>Explore Sanctuary</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <h4>307+</h4>
+            <p>Canonical Verses</p>
+          </div>
+          <div class="metric-item">
+            <h4>100%</h4>
+            <p>Offline First</p>
+          </div>
+          <div class="metric-item">
+            <h4>0</h4>
+            <p>Third-Party Ads</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Floating Phone Mockup -->
+      <div class="phone-mockup-wrapper">
+        <div class="phone-mockup-frame">
+          <div class="phone-island"></div>
+          <div class="phone-glass-reflection"></div>
+          <div class="mockup-screen" id="mockupScreen">
+            <div class="mockup-header">
+              <span id="mockupCategory">Classical Urdu</span>
+              <span>ALFAZ</span>
+            </div>
+
+            <div class="mockup-couplet-card">
+              <div class="couplet-verse" id="mockupVerse">
+                हज़ारों ख़्वाहिशें ऐसी कि हर ख़्वाहिश पे दम निकले<br>
+                बहुत निकले मिरे अरमान लेकिन फिर भी कम निकले
+              </div>
+              <div class="couplet-author" id="mockupAuthor">
+                Mirza Ghalib
+              </div>
+            </div>
+
+            <div class="mockup-audio-pill">
+              <div class="waveform">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span>The Doyen Recitation · 48kHz</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--gold-primary)"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Interactive Atmosphere Controls -->
+    <div class="interactive-hint">
+      <span>Interactive Preview: Switch reading atmosphere</span>
+      <div class="mockup-controls">
+        <button class="pill-btn active" data-theme="royal">Golden Royal</button>
+        <button class="pill-btn" data-theme="velvet">Midnight Velvet</button>
+        <button class="pill-btn" data-theme="ivory">Ivory Parchment</button>
+      </div>
+    </div>
+
+    <!-- Core Features Section -->
+    <section class="section" id="features">
+      <span class="section-tag">Craftsman-Grade Engineering</span>
+      <h2 class="section-title">Designed for Quiet Literary Sanctuary</h2>
+      <p class="section-desc">
+        Every detail of Alfaz is built to protect your reading state. No algorithmic rage-bait, zero pop-up ads, and zero surveillance tracking.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Dual-Script Multilingual Vault</h3>
+          <p>Read couplets in their authentic script (Devanagari Hindi, Romanized Hinglish, and English Stoic/Literary quotes) with effortless 1-tap switching.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3>Dual Master Voice Recitations</h3>
+          <p>Listen to human-voiced master recitations: <strong>The Doyen</strong> (deep gravitas of Ahmad Faraz) and <strong>The Ghazal Queen</strong> (melodic grace of Parveen Shakir), streamed in lossless high-fidelity audio.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎻</div>
+          <h3>Acoustic Ambient Soundscapes</h3>
+          <p>Subtle bansuri, classical sarangi, soothing rain, and acoustic piano stream dynamically from our acoustic cloud catalog and cache on-device for uninterrupted offline immersion.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Google Drive Cloud Vault</h3>
+          <p>Connect your personal Google Account to sync your private drafts, liked couplets, and awards directly to your hidden Google Drive AppData folder with 100% user privacy.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Story Studio & HD Export</h3>
+          <p>Compose your own verses and export crystal-clear 9:16 Instagram Stories and WhatsApp cards in custom visual styles without watermark fees.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Offline-First Resilience</h3>
+          <p>All 307 canonical verses live inside a local SQLite database. Open Alfaz on a flight or subway—it works instantly with zero internet dependency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 5 Atmospheres Section -->
+    <section class="section" id="atmospheres">
+      <span class="section-tag">Visual Restraint</span>
+      <h2 class="section-title">Five Handcrafted Atmospheres</h2>
+      <p class="section-desc">
+        Choose the reading canvas tailored for your environment: true OLED obsidian dark modes for deep night reading or warm ivory paper for outdoor sunlight.
+      </p>
+
+      <div class="themes-strip">
+        <div class="theme-card t-royal">
+          <h4>Golden Royal</h4>
+          <p>Deep Navy & Brushed Gold hairlines</p>
+        </div>
+        <div class="theme-card t-velvet">
+          <h4>Midnight Velvet</h4>
+          <p>Imperial Plum with soft starfields</p>
+        </div>
+        <div class="theme-card t-notebook">
+          <h4>Poetry Notebook</h4>
+          <p>Minimalist slate with cyan ruling</p>
+        </div>
+        <div class="theme-card t-ivory">
+          <h4>Ivory Parchment</h4>
+          <p>Warm museum vellum for daytime</p>
+        </div>
+        <div class="theme-card t-vellum">
+          <h4>Vintage Vellum</h4>
+          <p>Antique leather with candle amber</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arena & Competition Section -->
+    <section class="section" id="arena">
+      <div class="arena-banner-card">
+        <div class="arena-info">
+          <span class="section-tag">Aaj Ka Shayar · Live 24-Hour Arena</span>
+          <h2 class="section-title">Compete for the Poet of the Day Laureate</h2>
+          <p class="section-desc">
+            Enter your original couplet into the daily arena battle. The community votes in real-time, and top poets enter the Daily 30 Hall of Fame and the Weekly Laureate Podium.
+          </p>
+
+          <div class="arena-badge-list">
+            <div class="arena-badge-item">
+              <div class="check-circle">✓</div>
+              <span>Fair Peer Voting: Cryptographic device verification prevents vote spamming and protects authentic talent.</span>
+            </div>
+            <div class="arena-badge-item">
+              <div class="check-circle">✓</div>
+              <span>Daily 30 Archive: Permanent showcase of historical daily winners.</span>
+            </div>
+            <div class="arena-badge-item">
+              <div class="check-circle">✓</div>
+              <span>Real-time Content Moderation: Safe literary space with zero hate speech or harassment.</span>
+            </div>
+          </div>
+
+          <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="btn-primary" target="_blank" rel="noopener">
+            <span>Enter the Arena</span>
+          </a>
+        </div>
+
+        <div class="arena-visual">
+          <img src="assets/daily_30.jpg" alt="Daily 30 Laureate Portal" class="arena-portal-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Conversion Endpoint (The Grand Finale) -->
+    <section class="conversion-endpoint" id="download">
+      <div class="endpoint-card">
+        <div class="endpoint-info">
+          <span class="section-tag">Join the Literary Guild</span>
+          <h2>Step Inside the Sanctuary</h2>
+          <p>
+            Alfaz is officially available for Android worldwide. Verified public domain attribution, pure acoustic audio, and zero algorithmic noise.
+          </p>
+
+          <div class="security-seals-grid">
+            <div class="seal-item">
+              <div class="seal-dot"></div>
+              <span>100% Private On-Device Local Storage</span>
+            </div>
+            <div class="seal-item">
+              <div class="seal-dot"></div>
+              <span>Zero Third-Party Advertising SDKs</span>
+            </div>
+            <div class="seal-item">
+              <div class="seal-dot"></div>
+              <span>Private Google Drive AppData Sync</span>
+            </div>
+            <div class="seal-item">
+              <div class="seal-dot"></div>
+              <span>GDPR, CCPA & COPPA Compliant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="endpoint-action-box">
+          <h4>OFFICIAL ANDROID APP</h4>
+          <p>Free on Google Play · No Ads, No Subscription</p>
+
+          <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="endpoint-cta-btn" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.613V3.427c0-.624.23-1.204.609-1.613zm11.603 11.603l2.585 2.586-12.032 6.946 9.447-9.532zm2.585-2.834l-2.585 2.585-9.447-9.532 12.032 6.947zm1.19 1.189l3.528 2.037a1.69 1.69 0 010 2.934l-3.528 2.037-2.88-2.504 2.88-2.504z"/></svg>
+            <span>Download on Google Play</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Production Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>ALFAZ</h3>
+          <p>A sacred literary sanctuary for classical and contemporary poetry. Crafted with pride by Alphanor Studio.</p>
+          <div class="status-badge">
+            <span class="status-sparkle">✦</span>
+            <span>Google Play Production · Available Globally</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#atmospheres">Atmospheres</a></li>
+            <li><a href="#arena">The Arena</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.alfaz.app" target="_blank" rel="noopener">Google Play Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal & Safety</h5>
+          <ul class="footer-links">
+            <li><a href="privacy/">Privacy Policy</a></li>
+            <li><a href="terms/">Terms & Conditions</a></li>
+            <li><a href="guidelines/">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Community & Support</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:alfazapp@duck.com">Support & Inquiries</a></li>
+            <li><a href="guidelines/">Grievance Redressal</a></li>
+            <li><a href="privacy/">Data Privacy FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Alfaz. Crafted with pride by Alphanor Studio. All rights reserved.</span>
+        <span>Crafted for Classical & Contemporary Poetry.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

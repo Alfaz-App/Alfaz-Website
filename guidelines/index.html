@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Guidelines & UGC Policy — Alfaz Poetry Sanctuary</title>
+  <meta name="description" content="Community guidelines, user safety, and content moderation standards for Alfaz literary sanctuary.">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Modern Animated Mesh & Interactive Stardust Background -->
+  <div class="ambient-mesh-canvas">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+  </div>
+  <canvas id="ambientCanvas" class="ambient-particles-canvas"></canvas>
+  <div class="subtle-grid-pattern"></div>
+  <div class="cursor-glow-spot" id="cursorGlow"></div>
+  <div class="texture-grain-overlay"></div>
+
+  <div class="content-wrapper">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="../" class="brand">
+          <img src="../assets/icon.png" alt="Alfaz Quill" class="brand-icon">
+          ALFAZ
+        </a>
+        <ul class="nav-links">
+          <li><a href="../#features" class="nav-link">Features</a></li>
+          <li><a href="../privacy/" class="nav-link">Privacy</a></li>
+          <li><a href="../terms/" class="nav-link">Terms</a></li>
+          <li><a href="./" class="nav-link" style="color: var(--gold-primary);">Guidelines</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="../" class="nav-cta">
+            <span>Back to Home</span>
+          </a>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="../#features" class="mobile-drawer-link">Features</a>
+      <a href="../#arena" class="mobile-drawer-link">The Arena</a>
+      <a href="../privacy/" class="mobile-drawer-link">Privacy Policy</a>
+      <a href="../terms/" class="mobile-drawer-link">Terms & Conditions</a>
+      <a href="./" class="mobile-drawer-link" style="color: var(--gold-primary);">Community Guidelines</a>
+      <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="btn-primary" target="_blank" rel="noopener" style="margin-top: 8px; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.613V3.427c0-.624.23-1.204.609-1.613zm11.603 11.603l2.585 2.586-12.032 6.946 9.447-9.532zm2.585-2.834l-2.585 2.585-9.447-9.532 12.032 6.947zm1.19 1.189l3.528 2.037a1.69 1.69 0 010 2.934l-3.528 2.037-2.88-2.504 2.88-2.504z"/></svg>
+        <span>Download on Google Play</span>
+      </a>
+    </div>
+
+    <!-- Legal Content -->
+    <main class="legal-container">
+      <div class="legal-header">
+        <span class="section-tag">Safety & Content Moderation</span>
+        <h1>Community Guidelines</h1>
+        <p class="legal-date">Last Updated: November 24, 2026 · Version 1.0 (Production Candidate)</p>
+      </div>
+
+      <article class="legal-content">
+        <div class="legal-card">
+          <h3 style="color: var(--gold-primary); margin-bottom: 8px;">A Sacred Literary Space</h3>
+          <p style="margin-bottom: 0;">
+            Alfaz is dedicated to the timeless beauty of the written word. We hold our community to the highest standards of dignity, mutual respect, and poetic expression.
+          </p>
+        </div>
+
+        <h2>1. The Four Golden Principles</h2>
+        <ul>
+          <li><strong>Respect the Word:</strong> Treat fellow poets and readers with honor. Constructive poetic critique is welcomed; personal attacks and harassment are strictly prohibited.</li>
+          <li><strong>Authentic Expression:</strong> Submit original couplets or clearly attribute public domain inspirations. Do not claim another living poet's work as your own.</li>
+          <li><strong>Zero Obscenity:</strong> Poetry exploring sorrow, heartbreak, philosophy, and romance is celebrated; graphic sexual violence, vulgarity, or obscenity has no place in Alfaz.</li>
+          <li><strong>Fair Play in the Arena:</strong> Respect the democratic nature of community voting. Vote for verses that move your soul, not because of spam or coordinated manipulation.</li>
+        </ul>
+
+        <h2>2. Strictly Prohibited Content</h2>
+        <p>
+          Any content matching the following categories will be removed immediately, and repeat violations will result in permanent device bans:
+        </p>
+        <ul>
+          <li><strong>Hate Speech & Discrimination:</strong> Content promoting hatred, violence, or discrimination based on race, religion, nationality, caste, gender, sexual orientation, or disability.</li>
+          <li><strong>Harassment & Defamation:</strong> Bullying, targeted intimidation, doxxing, or defamatory statements against any individual or public figure.</li>
+          <li><strong>Self-Harm & Violence:</strong> Glorification of self-harm, suicide, or incitement to physical violence.</li>
+          <li><strong>Commercial Spam & Links:</strong> Using couplet fields to post affiliate links, betting/gambling promotions, or cryptocurrency schemes.</li>
+        </ul>
+
+        <h2>3. Safety & Reporting Tools</h2>
+        <p>
+          Every reader in Alfaz is equipped with built-in safety controls:
+        </p>
+        <ul>
+          <li><strong>In-App Report Button:</strong> Tap the <em>Report</em> icon on any couplet card or contest entry. You may select reasons such as Hate Speech, Obscenity, Plagiarism, or Spam.</li>
+          <li><strong>Creator Block:</strong> Tap <em>Block Poet</em> on any profile or submission to permanently hide that author's verses from your personal feeds.</li>
+          <li><strong>Automated Pre-Filter:</strong> All submitted couplets are analyzed through an on-device content moderation dictionary before entering the community arena.</li>
+        </ul>
+
+        <h2>4. Enforcement & Appeals</h2>
+        <p>
+          Reports are reviewed by human moderators within 24 hours. Content found in violation of these guidelines will be removed from all feeds and the Daily 30 Hall of Fame. If you believe your verse was flagged in error, you may file an appeal by emailing <a href="mailto:alfazapp@duck.com" style="color: var(--gold-primary);">alfazapp@duck.com</a> with the verse text and your pen name.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>ALFAZ</h3>
+          <p>A sacred literary sanctuary for classical and contemporary poetry. Crafted with pride by Alphanor Studio.</p>
+          <div class="status-badge">
+            <span class="status-sparkle">✦</span>
+            <span>Google Play Production · Available Globally</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul class="footer-links">
+            <li><a href="../#features">Features</a></li>
+            <li><a href="../#atmospheres">Atmospheres</a></li>
+            <li><a href="../#arena">The Arena</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.alfaz.app" target="_blank" rel="noopener">Google Play Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal & Safety</h5>
+          <ul class="footer-links">
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms & Conditions</a></li>
+            <li><a href="./">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:alfazapp@duck.com">alfazapp@duck.com</a></li>
+            <li><a href="./">Grievance Redressal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Alfaz. Crafted with pride by Alphanor Studio. All rights reserved.</span>
+        <span>Crafted for Classical & Contemporary Poetry.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

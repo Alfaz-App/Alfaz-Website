@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Alfaz Poetry Sanctuary</title>
+  <meta name="description" content="Privacy Policy for Alfaz app: 100% on-device SQLite storage, voluntary Google Drive Cloud Vault, zero third-party advertising, and complete user privacy.">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Modern Animated Mesh & Interactive Stardust Background -->
+  <div class="ambient-mesh-canvas">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+  </div>
+  <canvas id="ambientCanvas" class="ambient-particles-canvas"></canvas>
+  <div class="subtle-grid-pattern"></div>
+  <div class="cursor-glow-spot" id="cursorGlow"></div>
+  <div class="texture-grain-overlay"></div>
+
+  <div class="content-wrapper">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="../" class="brand">
+          <img src="../assets/icon.png" alt="Alfaz Quill" class="brand-icon">
+          ALFAZ
+        </a>
+        <ul class="nav-links">
+          <li><a href="../#features" class="nav-link">Features</a></li>
+          <li><a href="./" class="nav-link" style="color: var(--gold-primary);">Privacy</a></li>
+          <li><a href="../terms/" class="nav-link">Terms</a></li>
+          <li><a href="../guidelines/" class="nav-link">Guidelines</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="../" class="nav-cta">
+            <span>Back to Home</span>
+          </a>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="../#features" class="mobile-drawer-link">Features</a>
+      <a href="../#arena" class="mobile-drawer-link">The Arena</a>
+      <a href="./" class="mobile-drawer-link" style="color: var(--gold-primary);">Privacy Policy</a>
+      <a href="../terms/" class="mobile-drawer-link">Terms & Conditions</a>
+      <a href="../guidelines/" class="mobile-drawer-link">Community Guidelines</a>
+      <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" class="btn-primary" target="_blank" rel="noopener" style="margin-top: 8px; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.613V3.427c0-.624.23-1.204.609-1.613zm11.603 11.603l2.585 2.586-12.032 6.946 9.447-9.532zm2.585-2.834l-2.585 2.585-9.447-9.532 12.032 6.947zm1.19 1.189l3.528 2.037a1.69 1.69 0 010 2.934l-3.528 2.037-2.88-2.504 2.88-2.504z"/></svg>
+        <span>Download on Google Play</span>
+      </a>
+    </div>
+
+    <!-- Legal Content -->
+    <main class="legal-container">
+      <div class="legal-header">
+        <span class="section-tag">Legal & Privacy Governance</span>
+        <h1>Privacy Policy</h1>
+        <p class="legal-date">Effective Date: November 24, 2026 · Version 1.0 (Production Candidate)</p>
+      </div>
+
+      <article class="legal-content">
+        <div class="legal-card">
+          <h3 style="color: var(--gold-primary); margin-bottom: 8px;">Our Core Privacy Principle</h3>
+          <p style="margin-bottom: 0;">
+            Alfaz is built as a distraction-free, privacy-first sanctuary. We do not sell your data, we do not show third-party behavioral advertisements, and your penned poetry drafts belong exclusively to you.
+          </p>
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <p>
+          Alfaz is fundamentally an <strong>offline-first</strong> application. The majority of your activity remains strictly on your local device:
+        </p>
+        <ul>
+          <li><strong>Local On-Device Data (SQLite):</strong> Your drafted verses, liked/favorite couplets, custom pen name, chosen avatar style, and reading preferences are stored directly in your device's local database. We have zero access to this unshared data.</li>
+          <li><strong>Voluntary Google Account & Google Drive AppData:</strong> If you choose to connect your Google Account for cloud backups, Alfaz utilizes the official Google Drive AppData scope (<code>https://www.googleapis.com/auth/drive.appdata</code>). Your backup file (<code>alfaz_vault_backup.json</code>) is saved directly into your personal Google Drive storage. We do not store, access, or route your backup through external intermediate servers.</li>
+          <li><strong>Community Arena Submissions:</strong> If you voluntarily submit an original couplet to the public "Aaj Ka Shayar" contest, your submitted verse and pen name become visible to other readers for community voting.</li>
+          <li><strong>Technical Crash Diagnostics:</strong> We utilize Google Firebase Crashlytics to monitor application stability and resolve crashes. This data is strictly anonymized and includes device model, OS version, and technical stack traces. No personal identifiers or poem contents are included.</li>
+        </ul>
+
+        <h2>2. What We Never Do</h2>
+        <ul>
+          <li>We <strong>never</strong> sell, rent, or monetize your personal data or written poetry.</li>
+          <li>We <strong>never</strong> request invasive device permissions such as Contacts, SMS, precise GPS Location, or Microphone.</li>
+          <li>We <strong>never</strong> embed third-party advertising tracking SDKs (e.g. Meta Audience Network, ByteDance, AdMob behavioral tracking).</li>
+        </ul>
+
+        <h2>3. Google Drive AppData Privacy & Permissions</h2>
+        <p>
+          When you connect Google Drive in your Poet Profile:
+        </p>
+        <ul>
+          <li>The connection operates directly between your device and Google's official OAuth servers.</li>
+          <li>The <code>drive.appdata</code> space is isolated and hidden: other applications cannot access your Alfaz backup, nor does Alfaz have access to your personal Google Drive files (photos, spreadsheets, or documents).</li>
+          <li>You may disconnect your Google Account at any time directly inside the app under <em>Poet Profile → Manage Vault → Disconnect</em>, or by revoking access in your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener" style="color: var(--gold-primary); text-decoration: underline;">Google Account Security Dashboard</a>.</li>
+        </ul>
+
+        <h2>4. User-Generated Content (UGC) & Safety</h2>
+        <p>
+          Alfaz adheres strictly to Google Play Developer UGC policies:
+        </p>
+        <ul>
+          <li>Any user can report offensive or infringing couplets using the in-app <strong>Report Couplet</strong> sheet on any card.</li>
+          <li>Users can block creators permanently using the <strong>Block Poet</strong> mechanism under Settings.</li>
+          <li>Reported content is reviewed within 24 hours and removed if found in violation of our Community Guidelines.</li>
+        </ul>
+
+        <h2>5. Children's Privacy (COPPA Compliance)</h2>
+        <p>
+          Alfaz is intended for general audiences who appreciate literature and poetry. We do not knowingly collect personal information from children under the age of 13. If you believe a child has submitted personal data through our community features, please contact us immediately for prompt deletion.
+        </p>
+
+        <h2>6. Data Deletion & User Rights</h2>
+        <p>
+          Under GDPR, CCPA, and global privacy standards, you maintain absolute control over your information:
+        </p>
+        <ul>
+          <li><strong>Local Cache Wipe:</strong> You can wipe all local drafts and favorites at any time by clearing the app data in your Android system settings.</li>
+          <li><strong>Cloud Backup Deletion:</strong> Disconnecting your Google Account and deleting the app data removes your Google authorization. You may also delete your <code>alfaz_vault_backup.json</code> from your Google Drive.</li>
+          <li><strong>Community Submission Removal:</strong> To request immediate deletion of a previously published contest entry or profile data, email us at <a href="mailto:alfazapp@duck.com" style="color: var(--gold-primary);">alfazapp@duck.com</a> with your pen name or couplet ID.</li>
+        </ul>
+
+        <h2>7. Contact Information</h2>
+        <p>
+          If you have any questions or feedback regarding this Privacy Policy, please reach out to our team:
+        </p>
+        <div class="legal-card">
+          <p><strong>Alfaz Legal & Privacy Team</strong></p>
+          <p>Developer Contact: <a href="mailto:alfazapp@duck.com" style="color: var(--gold-primary);">alfazapp@duck.com</a></p>
+          <p>Official Website: <a href="https://play.google.com/store/apps/details?id=com.alfaz.app" style="color: var(--gold-primary);">Alfaz on Google Play</a></p>
+          <p>Studio: Alphanor Studio</p>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>ALFAZ</h3>
+          <p>A sacred literary sanctuary for classical and contemporary poetry. Crafted with pride by Alphanor Studio.</p>
+          <div class="status-badge">
+            <span class="status-sparkle">✦</span>
+            <span>Google Play Production · Available Globally</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul class="footer-links">
+            <li><a href="../#features">Features</a></li>
+            <li><a href="../#atmospheres">Atmospheres</a></li>
+            <li><a href="../#arena">The Arena</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.alfaz.app" target="_blank" rel="noopener">Google Play Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal & Safety</h5>
+          <ul class="footer-links">
+            <li><a href="./">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms & Conditions</a></li>
+            <li><a href="../guidelines/">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:alfazapp@duck.com">alfazapp@duck.com</a></li>
+            <li><a href="../guidelines/">Grievance Redressal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Alfaz. Crafted with pride by Alphanor Studio. All rights reserved.</span>
+        <span>Crafted for Classical & Contemporary Poetry.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+
